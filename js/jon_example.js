@@ -19,7 +19,7 @@ function setup() {
   texture1Button.style('z-index', '2');
   texture1Button.mousePressed(texture1);
 
-  texture2Button = createButton('Texture 1');
+  texture2Button = createButton('Texture 2');
   texture2Button.style('position', 'relative');
   texture2Button.style('z-index', '2');
   texture2Button.mousePressed(texture2);

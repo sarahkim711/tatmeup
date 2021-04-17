@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="">
 
 <head>
@@ -13,7 +13,7 @@
   </style>
   <script src="js/p5.js"></script>
   <script src="js/p5.sound.min.js"></script>
-  <script src="js/arraypractice.js"></script>
+  <script src="js/jon_example.js"></script>
 </head>
 
 <body>
@@ -21,4 +21,42 @@
   </main>
 </body>
 
+</html> -->
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
+    <script src="js/p5.min.js"></script>
+    <script src="js/jon_example.js"></script>
+    <style>
+    #vrScene{
+      display: none;
+      z-index: 1;
+    }
+    </style>
+  </head>
+  <body>
+    <a-scene id="vrScene">
+      <a-assets>
+          <a-asset-item id="body-obj" src="obj/structureScan.obj"></a-asset-item>
+          <a-asset-item id="body-mtl" src="mtl/structureScan.mtl"></a-asset-item>
+      </a-assets>
+
+      <a-entity  id="body-model" position="-1 0 -3.5" obj-model="obj: #body-obj; mtl: #body-mtl"></a-entity>
+
+      <!-- <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder> -->
+
+      <a-sky color="#46d46c"></a-sky>
+    </a-scene>
+
+  </body>
+  <script>
+  //mtl and model variables. these are use in the p5 sketch
+  let mtlFile = document.querySelector('#body-mtl');
+  let bodyModel = document.querySelector('#body-model');
+  </script>
 </html>
