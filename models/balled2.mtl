@@ -1,0 +1,180 @@
+newmtl Model:material0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd Model.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl Model1:material0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd Model.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl Model2:material0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd Model.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl Model3:material0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd Model.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl Model4:material0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd Model.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl aiStandardSurface1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl aiStandardSurface2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd balled.jpg
+Ni 1.00
+newmtl model_mesh:material_0
+illum 4
+Kd 0.00 0.00 0.00
+Ka 1.00 1.00 1.00
+Tf 1.00 1.00 1.00
+map_Kd model_texture.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 0.00
+newmtl textured:material0000
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0000_GhAZ2rsk_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured:material0002
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0001_GhAZ2rsk_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured:material0004
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0002_GhAZ2rsk_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured:material0006
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0003_GhAZ2rsk_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured:material0008
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0004_GhAZ2rsk_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured1:material0000
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured1:material0002
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0001_TrCnfXTa_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured1:material0004
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0002_TrCnfXTa_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured1:material0006
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0003_TrCnfXTa_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured1:material0008
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0004_TrCnfXTa_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured1:material0010
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0005_TrCnfXTa_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured1:material0014
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0007_TrCnfXTa_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
