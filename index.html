@@ -180,28 +180,62 @@ material="src: #headstand">
           <!-- <a-text id="popText" value="Hello Pop Up!" align="center" color="#FFF" visible="false" position="0 -0.55 0.55"
                 geometry="primitive: plane; width: 1.75" material="color: #333"></a-text> -->
         <a-entity  id="body-model" visible="false" position="-0.198 -0.55 0.55" scale="0.18 0.18 0.18" obj-model="obj: #body-obj;" material="src: #body"></a-entity>
-
       </a-box>
 
+<a-box id="hoverBox2" color="#32a852"
+              position="-2.356 2 0"
+              event-set__enterTxt="_event: mouseenter; _target: #headstand-model; visible: true"
+              event-set__leaveTxt="_event: mouseleave; _target: #headstand-model; visible: false"
+              event-set__enterBox="_event: mouseenter; _target: #hoverBox2; opacity: 0"
+              event-set__leaveBox="_event: mouseleave; _target: #hoverBox2; opacity: 1">
+
+                <!-- <a-text id="popText" value="Hello Pop Up!" align="center" color="#FFF" visible="false" position="0 -0.55 0.55"
+                      geometry="primitive: plane; width: 1.75" material="color: #333"></a-text> -->
+              <a-entity  id="headstand-model" visible="false" position="-0.554 0.449 0.550" scale="0.680 0.680 0.680" obj-model="obj: #headstand-obj;" material="src: #headstand"></a-entity>
+            </a-box>
 
 
-<!-- <a-entity <a-entity=""
+<a-Box
+ id="crouch-model" obj-model="obj: models/crouch.obj"
+position="-7.56421 0.53066 1.98254"
+ rotation="4.941188025208219 43.972218945110164 -10.106402548312591"
+ scale="0.2226 0.2226 0.2226"
+ material="src:#crouch"
+
+ event-set__enterTxt="_event: mouseenter; _target: #stretch-model; visible: true"
+ event-set__leaveTxt="_event: mouseleave; _target: #stretch-model; visible: false"
+ event-set__enterBox="_event: mouseenter; _target: #crouch-model; opacity: 0"
+ event-set__leaveBox="_event: mouseleave; _target: #crouch-model; opacity: 1" >
+
+<a-entity  id="stretch-model" visible="false" position="2.064 14.677 6.148" scale="9.047 9.047 9.047" obj-model="obj: #stretch-obj;" material="src: #stretch"></a-entity>
+</a-box>
+
+
+<a-Box
+ id="script1-model" obj-model="obj: models/script1.obj"
+position="-11.633 0.531 2.866"
+ rotation="4.941188025208219 43.972218945110164 -10.106402548312591"
+ scale="0.2226 0.2226 0.2226"
+ material="color: #284bc9"
+
+ event-set__enterTxt="_event: mouseenter; _target: #stretch-model; visible: true"
+ event-set__leaveTxt="_event: mouseleave; _target: #stretch-model; visible: false"
+ event-set__enterBox="_event: mouseenter; _target: #script1-model; opacity: 0"
+ event-set__leaveBox="_event: mouseleave; _target: #script1-model; opacity: 1" >
+
+<a-entity  id="stretch-model" visible="false" position="-17.174 10.778 0.795" scale="9.047 9.047 9.047" obj-model="obj: #stretch-obj;" material="src: #stretch"></a-entity>
+</a-box>
+
+
+
+<!--
+<a-entity <a-entity=""
 obj-model="obj: models/stretch.obj"
 position="7.31531 8.6184 -13.49873"
 rotation="-1.627773095966669 2.852756861956369 -5.420180741937588"
 scale="5.96397 5.96397 5.96397"
 material="src: #stretch">
 </a-entity> -->
-
-<!-- <a-entity <a-entity="" obj-model="obj: models/crouch.obj"
-position="-11.401 -0.94081 30.46384"
-rotation="10.943493886998723 121.49856524646673 2.573153457932527"
-scale="1.61912 1.61912 1.61912"
-material="src: #crouch">
-</a-entity> -->
-
-
-
 
 <!-- ---------------------- ADDING TEXT  -->
 <!-- <a-entity text-geometry="value: I splatter and spit; weight: bold"
