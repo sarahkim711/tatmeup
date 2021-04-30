@@ -49,6 +49,8 @@
       <img id="cloth" src="video/cloth.gif">
       <img id="body" src="images/body.jpg">
       <img id="skintexture3" src="images/skintexture3.jpg">
+      <img id="squiggle" src="images/squiggle.png">
+      <img id="backskin" src="images/backskin.jpg">
 
       <video id="cityvid" autoplay loop="true" src="video/city.mp4"></video>
       <video id="mountain" autoplay loop="true" src="video/mountain.mp4"></video>
@@ -91,6 +93,10 @@
       <a-asset-item id="script1-mtl" src="models/script1.mtl"></a-asset-item>
       <a-asset-item id="script2-obj" src="models/script2.obj"></a-asset-item>
       <a-asset-item id="script2-mtl" src="models/script2.mtl"></a-asset-item>
+      <a-asset-item id="squiggle-obj" src="models/squiggle.obj"></a-asset-item>
+      <a-asset-item id="squiggle-mtl" src="models/squiggle.mtl"></a-asset-item>
+      <a-asset-item id="backskin-obj" src="models/backskin.obj"></a-asset-item>
+      <a-asset-item id="backskin-mtl" src="models/backskin.mtl"></a-asset-item>
 
 s
     </a-assets>
@@ -151,8 +157,10 @@ material="src: #headstand">
 </a-entity> -->
 <a-entity <a-entity="" obj-model="obj: models/clothface.obj" position="50.16995 12.48187 -29.6473" rotation="59.35269799760198 -129.51023409578102 -47.065618081021476" scale="0.16753 0.4583 0.24333" material="src: #clothface; alphaTest: 0.23">
 </a-entity>
-<!-- <a-entity <a-entity="" obj-model="obj: models/clothface.obj" position="50.16995 12.48187 -29.6473" rotation="59.35269799760198 -129.51023409578102 -47.065618081021476" scale="0.16753 0.4583 0.24333" material="src:#clothface">
-</a-entity> -->
+<a-entity <a-entity="" obj-model="obj: models/squiggle.obj" position="-23.44215 18.53727 0.38598" rotation="-11.886009459988928 83.20263917771761 177.44846689878673" scale="0.16753 0.4583 0.24333" material="src:#squiggle">
+</a-entity>
+<a-entity <a-entity="" obj-model="obj: models/backskin.obj" position="17.33169 7.18919 -2.8343" rotation="-38.26670522119743 -126.54288567479848 5.24084495206164" scale="0.148 0.148 0.148" material="src:#backskin; alphaTest: 0.23">
+</a-entity>
 <a-entity <a-entity="" obj-model="obj: models/tree1.obj" position="-30.73439 10.32511 11.7034" rotation="-3.40968 -109.98361 2.20494" scale="5.06151 13.84633 7.35151" material="src: #tree1">
 </a-entity>
 <a-entity <a-entity="" obj-model="obj: models/tree1.obj" position="2.32782 5.06835 29.22725" rotation="-3.409671838823529 -109.98383243772257 5.040882681560983" scale="2.00434 3.58031 1.90091" material="src:#tree1">
