@@ -54,6 +54,8 @@
       <img id="tree5" src="images/tree5.jpg">
       <img id="tree6" src="images/tree6.jpg">
       <img id="tree7" src="images/tree7.jpg">
+      <img id="cloth2" src="images/cloth2.jpg">
+      <img id="stand" src="images/stand.jpg">
 
       <video id="cityvid" autoplay loop="true" src="video/city.mp4"></video>
       <video id="mountain" autoplay loop="true" src="video/mountain.mp4"></video>
@@ -119,9 +121,12 @@
       <a-asset-item id="tree12-mtl" src="models/tree12.mtl"></a-asset-item>
       <a-asset-item id="tree13-obj" src="models/tree13.obj"></a-asset-item>
       <a-asset-item id="tree13-mtl" src="models/tree13.mtl"></a-asset-item>
+      <a-asset-item id="cloth2-obj" src="models/cloth2.obj"></a-asset-item>
+      <a-asset-item id="cloth2-mtl" src="models/cloth2.mtl"></a-asset-item>
+      <a-asset-item id="stand-obj" src="models/stand.obj"></a-asset-item>
+      <a-asset-item id="stand-mtl" src="models/stand.mtl"></a-asset-item>
 
 
-s
     </a-assets>
 
 
@@ -179,6 +184,8 @@ scale="6.43151 7.89633 6.43151"
 material="src: #headstand">
 </a-entity> -->
 <a-entity <a-entity="" obj-model="obj: models/clothface.obj" position="50.16995 12.48187 -29.6473" rotation="59.35269799760198 -129.51023409578102 -47.065618081021476" scale="0.16753 0.4583 0.24333" material="src: #clothface; alphaTest: 0.23">
+</a-entity>
+<a-entity <a-entity="" obj-model="obj: models/cloth2.obj" position="2.66312 15.84328 38.37559" rotation="-7.085196094587761 -128.38609090173435 7.186609624325916" scale="0.45947 1.24958 0.66736" material="src: #cloth2 ; alphaTest: 0.23">
 </a-entity>
 <a-entity <a-entity="" obj-model="obj: models/squiggle.obj" position="-23.44215 18.53727 0.38598" rotation="-11.886009459988928 83.20263917771761 177.44846689878673" scale="0.16753 0.4583 0.24333" material="src:#squiggle">
 </a-entity>
@@ -263,26 +270,33 @@ material="src: #headstand">
 </a-box> -->
 
 
+
           <a-Box
            id="script1-model" obj-model="obj: models/script1.obj"
-          position="-11.633 0.531 2.866"
-           rotation="4.941188025208219 43.972218945110164 -10.106402548312591"
-           scale="0.2226 0.2226 0.2226"
-           material="src:#skintexture3"
+         position="-40.62426 3.72109 -35.95729"
+         rotation="0.7144783705281366 67.71730884871687 1.3080626462836693"
+          scale="1.5035 1.5035 1.5035"
+           material="color: #f048d1"
 
-           event-set__enterTxt="_event: mouseenter; _target: #stretch2-model; visible: true"
-           event-set__leaveTxt="_event: mouseleave; _target: #stretch2-model; visible: false"
+           event-set__enterTxt="_event: mouseenter; _target: #stand-model; visible: true"
+           event-set__leaveTxt="_event: mouseleave; _target: #stand-model; visible: false"
            event-set__enterBox="_event: mouseenter; _target: #script1-model; opacity: 0"
            event-set__leaveBox="_event: mouseleave; _target: #script1-model; opacity: 1" >
 
-          <a-entity  id="stretch2-model" visible="false" position="0.092 11.492 6.871" scale="5.240 5.240 5.240" obj-model="obj: #stretch-obj;" material="src: #stretch"></a-entity>
+          <a-entity id="stand-model" visible="false" position="-3.771 15.935 5.769" scale="2.837 2.837 2.837" obj-model="obj: models/stand.obj" material="src:#stand" rotation="0 -98.95439488145423 0"
+          animation="property: position;
+            to: 3.415 15.741 6.321;
+            dur: 3000;
+            easing: linear;
+            loop: true;"></a-entity>
           </a-box>
+
 
 <a-Box
  id="script2-model" obj-model="obj: models/script2.obj"
-position="-4.964 1.914 25.979"
- rotation="-6.175 133.287 -0.584"
- scale="0.223 0.223 0.223"
+position="3.02568 2.11766 27.18757"
+rotation="-6.175 133.287 -0.584"
+ scale="0.5 0.5 0.5"
  material="color:#2522f0"
 
  event-set__enterTxt="_event: mouseenter; _target: #body-model1; visible: true"
@@ -290,14 +304,13 @@ position="-4.964 1.914 25.979"
  event-set__enterBox="_event: mouseenter; _target: #script2-model; opacity: 0"
  event-set__leaveBox="_event: mouseleave; _target: #script2-model; opacity: 1" >
 
-<a-entity  id="body-model1" visible="false" position="2.555 -0.181 3.199" scale="1.713 1.713 1.713"  rotation="-6.413 163.516 -9.138" obj-model="obj: #body-obj;" material="src: #body"
+<a-entity  id="body-model1" visible="false" position="5.35392 0.12422 0.64183" scale="1.713 1.713 1.713" rotation="5.387522147615131 7.458764577013056 -0.31971044968299933" obj-model="obj: #body-obj;" material="src: #body"
 animation="property: rotation;
   to: 0 380 0;
-  dur: 8000;
+  dur: 4000;
   easing: linear;
   loop: true;"></a-entity>
 </a-box>
-
 
             <a-Box
              id="script3-model" obj-model="obj: models/script3.obj"
@@ -311,26 +324,23 @@ animation="property: rotation;
              event-set__enterBox="_event: mouseenter; _target: #script3-model; opacity: 0"
              event-set__leaveBox="_event: mouseleave; _target: #script3-model; opacity: 1" >
 
-            <a-entity  id="rainbow-model" visible="false" position="-2.178 12.802 5.411" scale="0.530 0.530 0.530ssssss" obj-model="obj: #rainbow-obj;" material="src: #rainbow"></a-entity>
-            </a-box>
 
+            <a-entity id="rainbow-model" visible="false" position="-14.62524 22.24577 31.55538" scale="1.87601 1.87601 1.87601" rotation="47.671 -8.245 -8.896" obj-model="obj: #rainbow-obj" material="src:#rainbow"></a-entity>
+            </a-box>
 
 <a-Box
  id="script4-model" obj-model="obj: models/script4.obj"
-  position="-18.215 1.914 12.027"
-rotation="17.258 125.390 5.650"
-          scale="0.223 0.223 0.223"
+  position="-33.64966 1.22618 22.24596"
+rotation="2.514 124.928 -0.314"
+scale="0.5 0.5 0.5"
         material="color: #3af026"
 
 event-set__enterTxt="_event: mouseenter; _target: #sit-model; visible: true"
 event-set__leaveTxt="_event: mouseleave; _target: #sit-model; visible: false"
 event-set__enterBox="_event: mouseenter; _target: #script4-model; opacity: 0"
 event-set__leaveBox="_event: mouseleave; _target: #script4-model; opacity: 1" >
-<a-entity  id="sit-model" visible="false" position="-0.130 16.066 -10.120" scale="1.713 1.713 1.713"  rotation="-10.714 -81.993 16.105" obj-model="obj: #sit-obj;" material="src: #sit"></a-entity>
+<a-entity  id="sit-model" visible="false" position="-9.07387 28.09933 -19.59268" scale="3.28 3.28 3.28" rotation="-5.866514864344499 -80.58880571633081 15.902443603856" obj-model="obj: #sit-obj;" material="src: #sit"></a-entity>
 </a-box>
-
-
-
 
 
 
@@ -483,11 +493,11 @@ s
 <!-- // BACKGROUND 360 LOAD -->
 
 <a-entity geometry="primitive: plane" scale="35.95246 35.95246 35.95246" position="-4.557 9.331 -77.970" material="shader: gif; src: #cloth; alphaTest: 0.5"></a-entity>
-
+<!--
 <a-video src="#skyvid" width="9" height="20" position="-183.65311 43.00922 -21.34535" material="" geometry="" rotation="0 90 -90" scale="11.3 15.67276 11.3"></a-video>
 <a-video src="#skyvid" width="9" height="20" position="32.06419 43 -180.29389" material="" geometry="" rotation="0 0 -90" scale="11.3 15.67276 11.3"></a-video>
 <a-video src="#skyvid" width="9" height="20" position="26.32441 50.62097 179.96712" material="" geometry="" rotation="0 0 90" scale="11.3 15.673 11.3"></a-video>
-<a-video src="#skyvid" width="9" height="20" position="217.21744 10 -10.66544" material="" geometry="" rotation="0 90 -90" scale="11.3 15.67276 11.3"></a-video>
+<a-video src="#skyvid" width="9" height="20" position="217.21744 10 -10.66544" material="" geometry="" rotation="0 90 -90" scale="11.3 15.67276 11.3"></a-video> -->
 
 <!-- <a-sky color="#df8439" material="color: #df8439" geometry=""></a-sky> -->
 <a-videosphere src="#skyvid"></a-videosphere>

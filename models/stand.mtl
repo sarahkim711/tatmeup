@@ -1,0 +1,66 @@
+newmtl aiStandardSurface1SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 0.00
+newmtl clothface:aiStandardSurface3SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd clothface.png
+map_Ka clothface.png
+Ni 0.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd tree4.jpg
+Ni 1.00
+newmtl textured:material0000
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0000_GhAZ2rsk_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured:material0002
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0001_GhAZ2rsk_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured:material0004
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0002_GhAZ2rsk_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured:material0006
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0003_GhAZ2rsk_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
+newmtl textured:material0008
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd textured_material0004_GhAZ2rsk_map_Kd.jpg
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 1.00
