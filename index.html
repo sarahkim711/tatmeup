@@ -56,6 +56,7 @@
       <img id="tree7" src="images/tree7.jpg">
       <img id="cloth2" src="images/cloth2.jpg">
       <img id="stand" src="images/stand.jpg">
+      <img id="cloth3" src="images/skintexture2.jpg">
 
       <video id="cityvid" autoplay loop="true" src="video/city.mp4"></video>
       <video id="mountain" autoplay loop="true" src="video/mountain.mp4"></video>
@@ -125,6 +126,8 @@
       <a-asset-item id="cloth2-mtl" src="models/cloth2.mtl"></a-asset-item>
       <a-asset-item id="stand-obj" src="models/stand.obj"></a-asset-item>
       <a-asset-item id="stand-mtl" src="models/stand.mtl"></a-asset-item>
+      <a-asset-item id="cloth3-obj" src="models/cloth3.obj"></a-asset-item>
+      <a-asset-item id="cloth3-mtl" src="models/cloth3.mtl"></a-asset-item>
 
 
     </a-assets>
@@ -185,7 +188,9 @@ material="src: #headstand">
 </a-entity> -->
 <a-entity <a-entity="" obj-model="obj: models/clothface.obj" position="50.16995 12.48187 -29.6473" rotation="59.35269799760198 -129.51023409578102 -47.065618081021476" scale="0.16753 0.4583 0.24333" material="src: #clothface; alphaTest: 0.23">
 </a-entity>
-<a-entity <a-entity="" obj-model="obj: models/cloth2.obj" position="2.66312 15.84328 38.37559" rotation="-7.085196094587761 -128.38609090173435 7.186609624325916" scale="0.45947 1.24958 0.66736" material="src: #cloth2 ; alphaTest: 0.23">
+<a-entity <a-entity="" obj-model="obj: models/cloth2.obj" position="2.66312 15.84328 38.37559" rotation="-7.085196094587761 -128.38609090173435 7.186609624325916" scale="0.45947 1.24958 0.66736" material="src: #cloth2 ; alphaTest: 1">
+</a-entity>
+<a-entity <a-entity="" obj-model="obj: models/cloth3.obj" position="14.81447 27.68977 -59.20661" rotation="10.365379471711723 -31.044572213573396 -95.71546446557967" scale="0.66952 0.35502 0.37258" material="src:#cloth3; alphaTest: 0.23">
 </a-entity>
 <a-entity <a-entity="" obj-model="obj: models/squiggle.obj" position="-23.44215 18.53727 0.38598" rotation="-11.886009459988928 83.20263917771761 177.44846689878673" scale="0.16753 0.4583 0.24333" material="src:#squiggle">
 </a-entity>
@@ -288,7 +293,8 @@ material="src: #headstand">
             to: 3.415 15.741 6.321;
             dur: 3000;
             easing: linear;
-            loop: true;"></a-entity>
+            loop: true;
+            dir: alternate"></a-entity>
           </a-box>
 
 
@@ -306,7 +312,7 @@ rotation="-6.175 133.287 -0.584"
 
 <a-entity  id="body-model1" visible="false" position="5.35392 0.12422 0.64183" scale="1.713 1.713 1.713" rotation="5.387522147615131 7.458764577013056 -0.31971044968299933" obj-model="obj: #body-obj;" material="src: #body"
 animation="property: rotation;
-  to: 0 380 0;
+  to: 0 360 0;
   dur: 4000;
   easing: linear;
   loop: true;"></a-entity>
@@ -324,8 +330,7 @@ animation="property: rotation;
              event-set__enterBox="_event: mouseenter; _target: #script3-model; opacity: 0"
              event-set__leaveBox="_event: mouseleave; _target: #script3-model; opacity: 1" >
 
-
-            <a-entity id="rainbow-model" visible="false" position="-14.62524 22.24577 31.55538" scale="1.87601 1.87601 1.87601" rotation="47.671 -8.245 -8.896" obj-model="obj: #rainbow-obj" material="src:#rainbow"></a-entity>
+            <a-entity id="rainbow-model" visible="false" position="-14.62524 22.24577 31.55538" scale="1.87601 1.87601 1.87601" rotation="47.671 -8.245 -8.896" obj-model="obj: #rainbow-obj" material="src:#rainbow"  ></a-entity>
             </a-box>
 
 <a-Box
