@@ -128,6 +128,8 @@
       <a-asset-item id="stand-mtl" src="models/stand.mtl"></a-asset-item>
       <a-asset-item id="cloth3-obj" src="models/cloth3.obj"></a-asset-item>
       <a-asset-item id="cloth3-mtl" src="models/cloth3.mtl"></a-asset-item>
+      <a-asset-item id="land-obj" src="models/land.obj"></a-asset-item>
+      <a-asset-item id="land-mtl" src="models/land.mtl"></a-asset-item>
 
 
     </a-assets>
@@ -177,6 +179,12 @@ scale="0.57569 0.57569 0.57569"
 <a-entity <a-entity="" obj-model="obj: models/bed.obj" position="-152.89923 16.72671 -139.87398" rotation="-1.65967 -89.918277494446 0.8009949975928908" scale="202.66923 13.13883 283.01961" material="src:#bed">
 </a-entity>
 
+<a-entity <a-entity="" obj-model="obj: models/land.obj" position="21.87991 -100.30718 -332.15325" rotation="1.733770288065871 -175.49639969077603 -0.6245239966925973" scale="2.38 2.38 2.38" material="src: #cloth2">
+</a-entity>
+<a-entity <a-entity="" obj-model="obj: models/land.obj" position="27.85609 -27.50624 185.04419" rotation="1.733770288065871 -175.49639969077603 -0.6245239966925973" scale="2.21 1.96 2.38" material="src:#cloth2">
+</a-entity>
+</a-entity>
+
 
 
 <!-- <a-entity <a-entity=""
@@ -186,7 +194,7 @@ rotation="-1.3796823706750223 -106.43361 0.6749442826641098"
 scale="6.43151 7.89633 6.43151"
 material="src: #headstand">
 </a-entity> -->
-<a-entity <a-entity="" obj-model="obj: models/clothface.obj" position="50.16995 12.48187 -29.6473" rotation="59.35269799760198 -129.51023409578102 -47.065618081021476" scale="0.16753 0.4583 0.24333" material="src: #clothface; alphaTest: 0.23">
+<a-entity <a-entity="" obj-model="obj: models/clothface.obj" position="70.98791 21.2567 -27.05876" rotation="57.09008766463036 -133.2871718812834 -50.27761948052487" scale="0.49961 0.75641 0.82372" material="src: #clothface; alphaTest: 0.23">
 </a-entity>
 <a-entity <a-entity="" obj-model="obj: models/cloth2.obj" position="2.66312 15.84328 38.37559" rotation="-7.085196094587761 -128.38609090173435 7.186609624325916" scale="0.45947 1.24958 0.66736" material="src: #cloth2 ; alphaTest: 1">
 </a-entity>
@@ -344,7 +352,7 @@ event-set__enterTxt="_event: mouseenter; _target: #sit-model; visible: true"
 event-set__leaveTxt="_event: mouseleave; _target: #sit-model; visible: false"
 event-set__enterBox="_event: mouseenter; _target: #script4-model; opacity: 0"
 event-set__leaveBox="_event: mouseleave; _target: #script4-model; opacity: 1" >
-<a-entity  id="sit-model" visible="false" position="-9.07387 28.09933 -19.59268" scale="3.28 3.28 3.28" rotation="-5.866514864344499 -80.58880571633081 15.902443603856" obj-model="obj: #sit-obj;" material="src: #sit"></a-entity>
+<a-entity id="sit-model" visible="" position="-9.41066 34.65112 -25.74157" scale="4.07162 4.07162 4.07162" rotation="-5.866514864344499 -80.58880571633081 15.902443603856" obj-model="obj: models/sit.obj" material="src:#sit"></a-entity>
 </a-box>
 
 
